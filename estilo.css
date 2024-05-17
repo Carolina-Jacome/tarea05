@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color: #F2F2F2;
+    --color: #F24405;
+    --color: #1260B3;
+    --color: #756BAB;
+    --color: #E3B441;
+    --color: #000105;
+}
+body{
+    background-image: url(img/fondo.jpg)
+}
+main{
+    margin: 40px 80px;
+    padding: 20px;
+    background-color: rgb(250, 237, 247);
+    border: 2px solid rgb(96, 199, 96);
+}
+#cabecera{
+    background-color:white;
+    display: flex;
+    align-items: flex-start;
+}
+#banner{
+    max-width: 30%;
+    background-color: #F2F2F2;
+}
+#menu{
+    display: flex;
+    justify-content:right;
+    padding-right: 7%;
+    margin: 5px;
+}
+#menu li {
+    display: inline-block;
+    background-color:#1260B3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 20px;
+    font-family: "Rowdies"
+}
+#menu li:hover {
+    background-color: rgb(145, 123, 197);
+    font-size: 30px;
+}    
+#contenedor{
+    border-top: 2px solid rgb(96, 199, 96);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    border-bottom: 2px solid rgb(96, 199, 96);
+}
+.caja1, .caja2, .caja3, .caja4 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 10px);
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.caja1 img, .caja2 img, .caja3 img, .caja4 img {
+    width: 20%;
+    height: auto;
+}
+#contenedor img{
+    max-width: 30%;
+    float: left;
+}
+.caja1 h3{
+    background-color:#F24405;
+    color: white;
+    text-align: center;
+}
+.caja2 h3{
+    background-color:#E3B441;
+    color: white;
+    text-align: center;
+}
+.caja3 h3{
+    background-color:#1260B3;
+    color: white;
+    text-align: center;
+}
+.caja4 h3{
+    background-color:#756BAB;
+    color: white;
+    text-align: center;
+}
+.caja1, .caja3{
+    margin-right: 10px;
+}
+.caja2, .caja4{
+    margin-left: 10px;
+}
+h3{
+    padding: 2px;
+    font-family: "Freeman";
+}
+p{
+    padding: 15px;
+    font-family: "Noto Sans";
+}
+#fin{
+    background-color:#78b4c7c4;
+}
+.rojo{
+    color: red;
+}
+.verde{
+    color: green;
+}
+.azul{
+    color: blue;
+}
+.isil{
+    background-color: rgba(25, 52, 138, 0.747);
+    color: white;
+}
+#fin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#fin p{
+    font-weight: bold ;
+    flex: 1;
+    text-align: left;
+    font-family: "Noto Sans";
+}
+#iconos{
+    max-width: 4%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#iconos img{
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 3px;
+    border-radius: 10px;
+}
